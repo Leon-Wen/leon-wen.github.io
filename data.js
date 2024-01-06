@@ -1,6 +1,6 @@
 window.onload=function()
 {var oBtn=document.getElementById("btn");
   oBtn.onclick=function()
-  {alert("queshi <br/> fdgfdfgdf");
+  {alert("你确实是");
   };
 }
