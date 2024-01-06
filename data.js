@@ -1,6 +1,6 @@
 window.onload=function()
 {var oBtn=document.getElementById("btn");
   oBtn.onclick=function()
-  {alert("queshi");
+  {alert("queshi <br/> fdgfdfgdf");
   };
 }
