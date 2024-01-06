@@ -1,6 +1,6 @@
 window.onload=function()
 {var oBtn=document.getElementById("btn");
   oBtn.onclick=function()
-  {alert("haha");
+  {alert("欢迎笨蛋🤩");
   };
 }
