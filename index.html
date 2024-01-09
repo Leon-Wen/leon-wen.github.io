@@ -3,24 +3,64 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>For lx</title>
+    <title>For LX</title>
     <script src="data.js"></script>
-    <style>
+    <style type="text/css">
         #ben{text-align:center; font-size: 70px; color:black;}
-        #btn{font-size: 30px; color:red;}
         #txt{font-size: 30px; color:black; text-decoration:none;}
+        #showBtn{color:red}
         #img1{width: 30px; height: 30px;}
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid black;
+            padding: 20px;
+            z-index: 1000;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        button {
+            font-size: 24px;
+            padding: 10px 20px;
+        }
     </style>
 </head>
 <body>
-    <form method="post">
-    <h1 style="text-align: center;" id="ben">你是<br/>小笨蛋</h1><br/><br/>
+    <h1 style="text-align: center;" id="ben">你是<br/>小天才</h1><br/><br/>
+    <p style="text-align: center;">！不要点啊！</p>
     <div style="text-align: center;">
-        <input id="btn" type="button" value="😡我才不是!!!😡"/>
-    </div><br/><br/><br/><br/>
+        <button id="showBtn">我肯定是</button>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div style="text-align: center;" class="modal" id="modal">
+            <img src="(1).jpg" style="max-width: 100%;">
+            <p>《变笨了》</p><br/>
+            <button id="closeBtn">关闭弹窗</button>
+        </div>
+    <p style="text-align: center;">↓要点这里↓</p>
     <div style="text-align: center;">
-    <a id="txt" href="txt.html" title="别点">点》我就是!🐷《我</a>
-    </div>
-</form>
+    <a id="txt" href="txt.html">我是小笨蛋</a>
+        <script>
+            document.getElementById('showBtn').addEventListener('click', function() {
+                document.getElementById('modal').style.display = 'block';
+                document.getElementById('overlay').style.display = 'block';
+            });
+            document.getElementById('closeBtn').addEventListener('click', function() {
+                document.getElementById('modal').style.display = 'none';
+                document.getElementById('overlay').style.display = 'none';
+            });
+        </script>
 </body>
 </html>
