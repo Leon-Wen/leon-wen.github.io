@@ -8,7 +8,7 @@
     <style type="text/css">
         #ben{text-align:center; font-size: 70px; color:black;}
         #txt{font-size: 30px; color:black; text-decoration:none;}
-        #showBtn{color:red}
+        #showBtn{color:red;}
         #img1{width: 30px; height: 30px;}
         .modal {
             display: none;
@@ -39,9 +39,11 @@
 </head>
 <body>
     <h1 style="text-align: center;" id="ben">你是<br/>小天才吗</h1><br/><br/>
-    <p style="text-align: center;">不要点啊</p>
     <div style="text-align: center;">
+        <strong id="strong">不要点啊</strong><br/>
         <button id="showBtn">我肯定是</button>
+        <br/><br/><p>↓要点这里↓</p>
+        <a id="txt" href="txt.html">我是小笨蛋</a>
         </div>
         <div class="overlay" id="overlay"></div>
         <div style="text-align: center;" class="modal" id="modal">
@@ -49,9 +51,6 @@
             <p>《变笨了》</p>
             <button id="closeBtn">我好笨</button>
         </div>
-    <p style="text-align: center;">↓要点这里↓</p>
-    <div style="text-align: center;">
-    <a id="txt" href="txt.html">我是小笨蛋</a>
         <script>
             document.getElementById('showBtn').addEventListener('click', function() {
                 document.getElementById('modal').style.display = 'block';
